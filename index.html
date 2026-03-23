@@ -1,0 +1,1416 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Como usar o TikTok para atrair clientes e vender — Prospera Rio</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --azul-principal: #092040;
+      --azul-secundario: #00B7D7;
+      --amarelo: #ECC203;
+      --cinza-neutro: #EFF1F3;
+      --azul-escuro: #021738;
+      --branco: #FFFFFF;
+      --font-titulo: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      --font-corpo: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      --radius: 12px;
+      --sombra: 0 4px 18px rgba(2,23,56,0.10);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-corpo);
+      color: var(--azul-escuro);
+      background: var(--branco);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    h1, h2, h3, h4 { font-family: var(--font-titulo); font-weight: 700; line-height: 1.25; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); }
+    h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); }
+    h3 { font-size: clamp(1.1rem, 2.5vw, 1.4rem); }
+    h4 { font-size: 1.05rem; }
+    p { margin-bottom: .9rem; }
+    strong { font-weight: 700; }
+
+    .container { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+    main { padding-bottom: 60px; }
+
+    /* HEADER */
+    .guia-header { padding: 18px 0 8px; text-align: center; }
+    .guia-topbar { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; max-width:980px; margin:0 auto 14px; padding:0 16px; }
+    .guia-org { display:flex; flex-direction:column; align-items:flex-start; gap:8px; min-width:140px; }
+    .guia-org--right { align-items:flex-end; }
+    .guia-label { font-family:var(--font-titulo); font-size:12px; font-weight:600; letter-spacing:.4px; color:#6B7280; text-transform:uppercase; }
+    .guia-logo { height:auto; width:auto; max-width:100%; display:block; }
+    .guia-logo--proponente { max-height:48px; }
+    .guia-logo--patrocinio { max-height:44px; }
+    .guia-brand { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; padding:0 16px; }
+    .guia-logo--projeto { max-width:360px; width:100%; height:auto; }
+    .guia-location { color:var(--amarelo); font-family:var(--font-titulo); font-weight:800; font-size:20px; letter-spacing:1px; }
+    @media (max-width:560px) {
+      .guia-topbar { flex-direction:column; align-items:center; gap:14px; }
+      .guia-org, .guia-org--right { align-items:center; }
+      .guia-logo--projeto { max-width:320px; }
+      .guia-location { font-size:18px; }
+    }
+
+    /* HERO */
+    .hero { background: var(--azul-principal); color: var(--branco); padding: 48px 16px 40px; text-align: center; }
+    .hero h1 { color: var(--branco); margin-bottom: 16px; }
+    .hero .subtitulo { font-size: 1.1rem; color: var(--azul-secundario); max-width: 700px; margin: 0 auto; font-weight: 600; }
+    .hero .tag-pill { display: inline-block; background: var(--amarelo); color: var(--azul-escuro); font-family: var(--font-titulo); font-size: .78rem; font-weight: 800; letter-spacing: .5px; padding: 4px 14px; border-radius: 30px; margin-bottom: 18px; text-transform: uppercase; }
+
+    /* NAV */
+    nav.sumario { background: var(--cinza-neutro); border-bottom: 3px solid var(--azul-secundario); padding: 20px 16px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+    nav.sumario .nav-titulo { font-family: var(--font-titulo); font-size: .75rem; font-weight: 800; color: var(--azul-principal); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
+    nav.sumario ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+    nav.sumario ul li a { display: inline-block; background: var(--azul-principal); color: var(--branco); text-decoration: none; font-family: var(--font-titulo); font-size: .73rem; font-weight: 600; padding: 5px 11px; border-radius: 20px; transition: background .2s, color .2s; }
+    nav.sumario ul li a:hover { background: var(--azul-secundario); }
+
+    /* SECOES */
+    section { padding: 52px 0 32px; }
+    section:nth-child(even) { background: var(--cinza-neutro); }
+
+    .secao-header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; border-left: 5px solid var(--azul-secundario); padding-left: 16px; }
+    .secao-numero { background: var(--azul-principal); color: var(--amarelo); font-family: var(--font-titulo); font-weight: 800; font-size: 1.4rem; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .secao-header h2 { color: var(--azul-principal); }
+
+    /* OBJETIVO */
+    .objetivo-box { background: var(--azul-secundario); color: var(--branco); border-radius: var(--radius); padding: 14px 20px; margin-bottom: 28px; font-weight: 600; font-size: .95rem; }
+    .objetivo-box span { font-weight: 800; text-transform: uppercase; font-size: .8rem; letter-spacing: .4px; display:block; margin-bottom:4px; }
+
+    /* DICA */
+    .dica { border-left: 4px solid var(--amarelo); background: #fffbe6; border-radius: 0 var(--radius) var(--radius) 0; padding: 14px 18px; margin: 18px 0; }
+    .dica .dica-titulo { font-family: var(--font-titulo); font-weight: 800; font-size: .82rem; color: #7a5f00; text-transform: uppercase; margin-bottom: 6px; }
+
+    /* ERRO */
+    .erro-box { border-left: 4px solid #e53e3e; background: #fff5f5; border-radius: 0 var(--radius) var(--radius) 0; padding: 14px 18px; margin: 18px 0; }
+    .erro-box .erro-titulo { font-family: var(--font-titulo); font-weight: 800; font-size: .82rem; color: #c53030; text-transform: uppercase; margin-bottom: 6px; }
+
+    /* EXERCICIO */
+    .exercicio { background: var(--azul-principal); color: var(--branco); border-radius: var(--radius); padding: 22px 24px; margin-top: 28px; }
+    .exercicio h4 { color: var(--amarelo); margin-bottom: 12px; font-size: 1rem; text-transform: uppercase; letter-spacing: .4px; }
+    .exercicio p { color: #d0e6f0; font-size: .95rem; margin-bottom: 8px; }
+    .linha-escrita { background: rgba(255,255,255,.08); border-bottom: 1px solid rgba(255,255,255,.25); height: 34px; margin: 8px 0; border-radius: 4px 4px 0 0; }
+
+    /* CARDS */
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 20px; }
+    .card { background: var(--branco); border-radius: var(--radius); border: 1px solid #dde3ed; padding: 20px; box-shadow: var(--sombra); transition: transform .2s, box-shadow .2s; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(2,23,56,.14); }
+    .card-icon { font-size: .72rem; font-family: var(--font-titulo); font-weight: 800; color: var(--azul-secundario); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; display: inline-block; background: #e8f8fc; padding: 3px 10px; border-radius: 20px; }
+    .card h4 { color: var(--azul-principal); margin-bottom: 8px; }
+    .card p { font-size: .9rem; margin-bottom: 0; }
+
+    /* CHECKLIST */
+    .checklist { list-style: none; margin-top: 14px; }
+    .checklist li { display: flex; align-items: flex-start; gap: 10px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.07); font-size: .95rem; }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before { content: "[ ]"; color: var(--azul-secundario); font-size: .85rem; font-family: var(--font-titulo); font-weight: 700; line-height: 1.7; flex-shrink: 0; }
+
+    /* PASSO A PASSO */
+    .passo-lista { list-style: none; counter-reset: passo; margin-top: 14px; }
+    .passo-lista li { counter-increment: passo; display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; }
+    .passo-lista li::before { content: counter(passo); background: var(--azul-secundario); color: var(--branco); font-family: var(--font-titulo); font-weight: 800; font-size: .85rem; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+
+    /* MODELO / PROMPT */
+    .modelo-box { background: #f4f8ff; border: 2px solid var(--azul-secundario); border-radius: var(--radius); padding: 18px 22px; margin: 18px 0; font-size: .93rem; position: relative; }
+    .modelo-box .mod-titulo { font-family: var(--font-titulo); font-weight: 800; color: var(--azul-principal); font-size: .8rem; text-transform: uppercase; letter-spacing: .4px; margin-bottom: 8px; }
+    .modelo-box pre { white-space: pre-wrap; word-break: break-word; font-family: var(--font-corpo); line-height: 1.65; color: var(--azul-escuro); }
+    .modelo-box .exemplo-tag { display: inline-block; background: var(--amarelo); color: var(--azul-escuro); font-family: var(--font-titulo); font-size: .72rem; font-weight: 800; padding: 2px 10px; border-radius: 20px; margin-bottom: 8px; }
+
+    /* BOTAO COPIAR */
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      background: var(--azul-principal);
+      color: var(--branco);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-family: var(--font-titulo);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .3px;
+      cursor: pointer;
+      transition: background .2s, transform .1s;
+    }
+    .copy-btn:hover { background: var(--azul-secundario); }
+    .copy-btn:active { transform: scale(.97); }
+    .copy-btn.copiado { background: #22863a; }
+    .copy-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+    /* DIAS GRID */
+    .dias-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 20px; }
+    .dia-card { border: 2px solid var(--azul-secundario); border-radius: var(--radius); padding: 16px; }
+    .dia-card .dia-num { font-family: var(--font-titulo); font-weight: 800; font-size: .78rem; color: var(--azul-secundario); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; }
+    .dia-card h4 { font-size: .95rem; color: var(--azul-principal); margin-bottom: 6px; }
+    .dia-card p { font-size: .87rem; margin-bottom: 0; color: #4a5568; }
+
+    /* FRASES */
+    .frases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 20px; }
+    .frase-card { background: var(--azul-principal); color: var(--branco); border-radius: var(--radius); padding: 22px; border-left: 5px solid var(--amarelo); font-family: var(--font-titulo); font-weight: 600; font-size: 1rem; line-height: 1.5; }
+
+    /* GLOSSARIO */
+    .glossario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 20px; }
+    .gloss-item { background: var(--branco); border-radius: var(--radius); border: 1px solid #dde3ed; padding: 18px; box-shadow: var(--sombra); }
+    .gloss-item h4 { color: var(--azul-secundario); font-size: 1rem; margin-bottom: 6px; }
+    .gloss-item p { font-size: .9rem; margin-bottom: 0; }
+
+    /* PROMPT SECTION */
+    .prompt-bloco { margin-bottom: 32px; }
+    .prompt-bloco h3 { color: var(--azul-principal); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--azul-secundario); }
+
+    /* HIGHLIGHT */
+    .highlight { background: var(--amarelo); color: var(--azul-escuro); padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+
+    /* AUDIO STEPS */
+    .audio-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 20px; counter-reset: audio-step; }
+    .audio-step { border-radius: var(--radius); background: var(--branco); border: 1px solid #dde3ed; padding: 20px; box-shadow: var(--sombra); counter-increment: audio-step; position: relative; padding-top: 46px; }
+    .audio-step::before { content: counter(audio-step); position: absolute; top: 16px; left: 20px; background: var(--azul-secundario); color: var(--branco); font-family: var(--font-titulo); font-weight: 800; font-size: .85rem; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .audio-step h4 { color: var(--azul-principal); margin-bottom: 8px; font-size: .95rem; }
+    .audio-step p { font-size: .88rem; margin-bottom: 0; }
+
+    /* LIVE CHECKLIST ESPECIAL */
+    .live-checklist { list-style: none; margin-top: 14px; counter-reset: live-item; }
+    .live-checklist li { counter-increment: live-item; display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.07); font-size: .95rem; }
+    .live-checklist li:last-child { border-bottom: none; }
+    .live-checklist li::before { content: counter(live-item); background: var(--amarelo); color: var(--azul-escuro); font-family: var(--font-titulo); font-weight: 800; font-size: .82rem; min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+
+    /* FOOTER */
+    footer { background: var(--azul-principal); color: rgba(255,255,255,.7); text-align: center; padding: 28px 16px; font-size: .88rem; }
+    footer strong { color: var(--amarelo); }
+
+    /* DIVISOR */
+    .divisor { height: 3px; background: linear-gradient(90deg, var(--azul-secundario), var(--amarelo)); border: none; margin: 0; }
+
+    /* RESPONSIVO */
+    @media (max-width: 640px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      .dias-grid { grid-template-columns: 1fr 1fr; }
+      .frases-grid { grid-template-columns: 1fr; }
+      .glossario-grid { grid-template-columns: 1fr; }
+      .audio-steps { grid-template-columns: 1fr; }
+      nav.sumario { position: static; }
+    }
+    @media (max-width: 400px) {
+      .dias-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="guia-header" role="banner">
+  
+  <div class="guia-brand">
+    <img src="https://lh3.googleusercontent.com/d/1x5sNkC9vd7CI78y0xdkWvgoadxPEMcIf=w800" alt="Prospera Rio" class="guia-logo guia-logo--projeto" loading="eager" decoding="async" />
+    <div class="guia-location">MARE · JACAREZINHO</div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <div class="tag-pill">Guia Pratico — TikTok para Empreendedores</div>
+    <h1>Como usar o TikTok para atrair clientes e vender, mesmo sem saber nada de tecnologia</h1>
+    <p class="subtitulo">Um passo a passo simples, honesto e pratico para voce comecar ainda hoje</p>
+  </div>
+</div>
+
+<nav class="sumario" aria-label="Sumário do guia">
+  <div class="container">
+    <div class="nav-titulo">Ir para:</div>
+    <ul>
+      <li><a href="#s1">1. Abertura</a></li>
+      <li><a href="#s2">2. Criar Conta</a></li>
+      <li><a href="#s3">3. Como Funciona</a></li>
+      <li><a href="#s4">4. Tipos de Video</a></li>
+      <li><a href="#s5">5. Roteiro</a></li>
+      <li><a href="#s6">6. Gravacao</a></li>
+      <li><a href="#s7">7. Publicacao</a></li>
+      <li><a href="#s8">8. Audios em Alta</a></li>
+      <li><a href="#s9">9. TikTok LIVE</a></li>
+      <li><a href="#s10">10. Vendas</a></li>
+      <li><a href="#s11">11. Produtor Local</a></li>
+      <li><a href="#s12">12. Plano 7 Dias</a></li>
+      <li><a href="#s13">13. Checklists</a></li>
+      <li><a href="#prompts">Prompts Prontos</a></li>
+      <li><a href="#capcut">CapCut IA</a></li>
+      <li><a href="#glossario">Glossario</a></li>
+      <li><a href="#frases">Frases</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- S1 -->
+<section id="s1">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">1</div>
+      <h2>Abertura: Você está no lugar certo</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Quebrar o medo do TikTok e mostrar como ele pode ajudar o seu negócio local a vender mais, sem precisar dançar, sem precisar ser famoso, sem precisar de câmera profissional.
+    </div>
+    <h3>Antes de mais nada: bem-vindo(a)!</h3>
+    <p>Se você chegou até aqui pensando "TikTok não é pra mim", "eu sou velho(a) demais" ou "não sei fazer vídeo", respira. Você não está sozinho. A maioria dos pequenos empreendedores pensa exatamente isso. E eles estão perdendo vendas por causa disso.</p>
+    <p>Este guia foi feito para você. Passo a passo. Sem tecniquês. Do jeito que uma amiga explicaria.</p>
+    <div class="dica">
+      <div class="dica-titulo">Dica — A verdade que ninguém te conta</div>
+      <p>TikTok <strong>não é sobre dançar</strong>. Não é sobre ficar famoso. É sobre aparecer na frente da pessoa certa, na hora certa, com a mensagem certa. E isso qualquer um pode fazer.</p>
+    </div>
+    <h3>Por que o TikTok ajuda o negócio local?</h3>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">Local</div><h4>Alcance local</h4><p>O TikTok mostra seus vídeos para pessoas perto de você, mesmo sem pagar anúncio.</p></div>
+      <div class="card"><div class="card-icon">Gratis</div><h4>Gratuito</h4><p>Não precisa investir dinheiro. Seu celular e sua história já são suficientes para começar.</p></div>
+      <div class="card"><div class="card-icon">Organico</div><h4>Alcance orgânico</h4><p>Um vídeo bom pode ser visto por milhares de pessoas sem você gastar nada.</p></div>
+      <div class="card"><div class="card-icon">Confianca</div><h4>Confiança</h4><p>Mostrar o seu rosto, seu produto e seu trabalho gera confiança, e confiança gera venda.</p></div>
+    </div>
+    <h3 style="margin-top:28px;">A regra de ouro</h3>
+    <p><span class="highlight">Consistência + Clareza</span> valem mais do que perfeição.</p>
+    <p>Um vídeo gravado com celular antigo todo dia bate um vídeo "profissional" publicado uma vez por mês. Não precisa ser bonito. Precisa ser <strong>claro</strong>: o que você vende, para quem, onde encontrar.</p>
+    <div class="exercicio">
+      <h4>Exercício 1 — Me apresente em 1 frase</h4>
+      <p>Complete a frase abaixo como se estivesse falando para um cliente:</p>
+      <p><em>"Eu vendo [PRODUTO/SERVIÇO] para [QUEM] no/na [BAIRRO/CIDADE]."</em></p>
+      <div class="linha-escrita"></div>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S2 -->
+<section id="s2">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">2</div>
+      <h2>Instalação e criação de conta</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Instalar o TikTok, criar uma conta profissional e configurar o perfil para atrair clientes desde o primeiro momento.
+    </div>
+    <h3>Passo a passo para instalar</h3>
+    <ol class="passo-lista">
+      <li>Abra a <strong>App Store</strong> (iPhone) ou <strong>Play Store</strong> (Android) no seu celular.</li>
+      <li>Na busca, digite <strong>"TikTok"</strong> e toque em instalar.</li>
+      <li>Abra o aplicativo e toque em <strong>"Cadastrar-se"</strong>.</li>
+      <li>Escolha entrar com e-mail ou com o número do seu celular.</li>
+      <li>Crie uma senha e confirme seu número ou e-mail.</li>
+      <li>Pronto! Você já tem uma conta.</li>
+    </ol>
+    <h3 style="margin-top:28px;">Configurar privacidade básica</h3>
+    <ol class="passo-lista">
+      <li>Toque nos 3 tracos (=) no canto superior direito e acesse <strong>Configurações</strong>.</li>
+      <li>Vá em <strong>Privacidade</strong> e certifique que seu perfil está como <strong>Público</strong>.</li>
+      <li>Ative "Permitir que outros me encontrem".</li>
+      <li>Em <strong>Conta</strong>, selecione <strong>Conta Comercial</strong> (Creator/Business), isso libera mais dados.</li>
+    </ol>
+    <h3 style="margin-top:28px;">Nome de usuário: simples e profissional</h3>
+    <p>Use um nome que seu cliente consiga lembrar e digitar fácil. Evite números aleatórios ou apelidos complicados.</p>
+    <div class="modelo-box">
+      <div class="mod-titulo">Exemplos de nomes profissionais</div>
+      <pre>@docesdaraquel
+@barbeariado_marcos
+@modanamare_oficial
+@esteticadajulia_rj
+@marmitasdarita
+@conserto_eletrico_joao</pre>
+    </div>
+    <h3 style="margin-top:28px;">Foto de perfil</h3>
+    <p>Use <strong>sua própria foto</strong>, sorrindo, com boa iluminação, de frente. Ou a foto do seu produto mais bonito. Evite logo pequeno ou imagem borrada.</p>
+    <h3 style="margin-top:28px;">Bio do perfil — modelos prontos</h3>
+    <p>A bio tem poucos caracteres. Seja direta: o que você vende, onde e como falar com você.</p>
+    <div class="modelo-box">
+      <div class="mod-titulo">Modelo</div>
+      <pre>[O QUE VOCE FAZ] + [DIFERENCIAL]
+Localizacao: [BAIRRO / CIDADE]
+Peca pelo WhatsApp (link abaixo)</pre>
+      <br>
+      <div class="exemplo-tag">Exemplo — Confeitaria</div>
+      <pre>Doces artesanais feitos no dia + Entrega na Mare
+Localizacao: Mare, Rio de Janeiro
+Peca pelo WhatsApp (link abaixo)</pre>
+      <br>
+      <div class="exemplo-tag">Exemplo — Moda</div>
+      <pre>Moda feminina a partir de R$39 + Entregamos
+Localizacao: Jacarezinho, RJ
+Chama no WhatsApp (link abaixo)</pre>
+    </div>
+    <div class="erro-box">
+      <div class="erro-titulo">Erro comum — Bio vaga</div>
+      <p>"Bem-vindo ao meu perfil, aqui você encontra de tudo!" Isso não diz nada. O cliente não sabe o que você vende.</p>
+    </div>
+    <div class="exercicio">
+      <h4>Exercício 2 — Escreva sua bio agora</h4>
+      <p>Use os modelos acima e escreva a bio do seu perfil:</p>
+      <div class="linha-escrita"></div>
+      <div class="linha-escrita"></div>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S3 -->
+<section id="s3">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">3</div>
+      <h2>Como o TikTok funciona, sem jargão</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Entender como o TikTok decide quem vê seu vídeo e o que você pode fazer para aparecer para mais pessoas.
+    </div>
+    <h3>O "Para Você" é sua vitrine gratuita</h3>
+    <p>Sabe quando você abre o TikTok e vê vídeos de pessoas que você nunca seguiu? Essa é a tela "Para Você" (também chamada de FYP). É como uma vitrine de shopping: o TikTok coloca seus produtos na frente das pessoas certas, e você não paga nada por isso.</p>
+    <p>O que define quem vê? O comportamento das pessoas com o seu vídeo.</p>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">Retencao</div><h4>Retenção</h4><p>As pessoas ficaram assistindo ou pularam? Quanto mais tempo ficarem, mais o TikTok espalha seu vídeo. É como se as pessoas estivessem votando no seu conteúdo sem precisar clicar em nada.</p></div>
+      <div class="card"><div class="card-icon">Engajamento</div><h4>Engajamento</h4><p>Curtidas, comentários, salvamentos e compartilhamentos mostram para o TikTok que seu vídeo vale a pena. Comentário e salvar têm mais peso do que curtida.</p></div>
+      <div class="card"><div class="card-icon">Consistencia</div><h4>Consistência</h4><p>Postar com regularidade ensina o algoritmo sobre quem é você. Um vídeo por semana já é melhor do que nenhum. Três por semana é ideal para começar.</p></div>
+      <div class="card"><div class="card-icon">Teste</div><h4>Teste</h4><p>Nem todo vídeo vai bombar, e tudo bem. O importante é testar formatos diferentes até descobrir o que funciona para o seu negócio.</p></div>
+    </div>
+    <div class="dica" style="margin-top:24px;">
+      <div class="dica-titulo">Dica — Vídeo perfeito vs. vídeo claro</div>
+      <p>Um vídeo com boa iluminação, áudio claro e mensagem direta bate, quase sempre, um vídeo super editado, com efeitos, mas sem clareza. <strong>Clareza vende. Perfeição paralisa.</strong></p>
+    </div>
+    <div class="exercicio">
+      <h4>Exercício 3 — Reflita</h4>
+      <p>Pense: quando você está no TikTok, o que faz você parar de rolar e assistir um vídeo até o fim?</p>
+      <div class="linha-escrita"></div>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S4 -->
+<section id="s4">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">4</div>
+      <h2>Tipos de vídeos que vendem</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Conhecer 8 formatos de vídeo que funcionam para negócios locais, com exemplos práticos para cada tipo.
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">Produto</div><h4>Produto em uso</h4><p>Mostre seu produto funcionando. Ex: a manicure aplicando esmalte, o cozinheiro montando a marmita, a costureira terminando um vestido.</p></div>
+      <div class="card"><div class="card-icon">Antes/Depois</div><h4>Antes e Depois</h4><p>Muito poderoso. Cabelo antes e depois do corte. Casa antes e depois da limpeza. Roupa antes e depois do conserto.</p></div>
+      <div class="card"><div class="card-icon">Bastidores</div><h4>Bastidores</h4><p>Como você faz o que faz? Mostre o processo: preparando doces, atendendo clientes, montando pedidos. Humaniza e gera confiança.</p></div>
+      <div class="card"><div class="card-icon">Prova Social</div><h4>Prova Social</h4><p>Filmou um cliente satisfeito? Leu um elogio no WhatsApp? Mostre! "Olha o que a cliente disse sobre meu trabalho."</p></div>
+      <div class="card"><div class="card-icon">FAQ</div><h4>Perguntas Frequentes</h4><p>"Todo mundo me pergunta se faço entrega, sim, faço!" Responda dúvidas comuns do seu cliente em vídeo curto.</p></div>
+      <div class="card"><div class="card-icon">Oferta</div><h4>Oferta Simples</h4><p>"Hoje só: [produto] por R$ [preço]. Manda mensagem até as 18h." Direto, claro, urgência real.</p></div>
+      <div class="card"><div class="card-icon">3 Motivos</div><h4>3 Motivos para Comprar</h4><p>"3 motivos para experimentar minha marmita: 1) feita no dia, 2) entrego no bairro, 3) cabe no bolso."</p></div>
+      <div class="card"><div class="card-icon">Qualificacao</div><h4>"Isso é pra quem..."</h4><p>Qualifique seu cliente. "Isso é pra quem quer cabelo hidratado sem gastar muito." Quem se identificar, vai chamar.</p></div>
+    </div>
+    <div class="dica" style="margin-top:24px;">
+      <div class="dica-titulo">Dica de ouro</div>
+      <p>Não tente fazer todos os tipos ao mesmo tempo. Escolha <strong>2 formatos</strong> que parecem mais naturais pra você e comece por eles.</p>
+    </div>
+    <div class="exercicio">
+      <h4>Exercício 4 — Seus 3 primeiros vídeos</h4>
+      <p>Escolha 3 tipos acima e anote uma ideia de vídeo para o seu negócio:</p>
+      <p>Vídeo 1 (tipo: ________):</p>
+      <div class="linha-escrita"></div>
+      <p>Vídeo 2 (tipo: ________):</p>
+      <div class="linha-escrita"></div>
+      <p>Vídeo 3 (tipo: ________):</p>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S5 -->
+<section id="s5">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">5</div>
+      <h2>Estrutura simples de vídeo (roteiro)</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Aprender uma estrutura de 4 partes que funciona para qualquer vídeo, e que qualquer pessoa consegue usar.
+    </div>
+    <p>Você não precisa de roteiro complicado. Todo vídeo que vende tem só <strong>4 partes</strong>:</p>
+    <div class="cards-grid">
+      <div class="card" style="border-top: 4px solid var(--amarelo);">
+        <div class="card-icon">Gancho</div>
+        <h4>1. Gancho — Primeiros 2 segundos</h4>
+        <p>A primeira frase tem que fazer a pessoa parar de rolar. Comece com algo que chame atenção:</p>
+        <ul style="margin-top:8px; padding-left:18px; font-size:.9rem;">
+          <li>"Você sabia que pode ter [resultado] por só R$X?"</li>
+          <li>"Esse erro está te fazendo perder dinheiro."</li>
+          <li>"Isso aqui mudou tudo para minha cliente."</li>
+          <li>Mostre o produto diretamente, sem introdução.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top: 4px solid var(--azul-secundario);">
+        <div class="card-icon">Conteudo</div>
+        <h4>2. Conteúdo — 1 Ideia só</h4>
+        <p>Não tente falar 10 coisas num vídeo de 30 segundos. Escolha <strong>uma mensagem</strong> e desenvolva. Mostre, explique ou demonstre essa única ideia.</p>
+      </div>
+      <div class="card" style="border-top: 4px solid var(--azul-secundario);">
+        <div class="card-icon">Prova</div>
+        <h4>3. Prova (se tiver)</h4>
+        <p>Mostre um resultado real: foto do cliente, elogio no WhatsApp, produto entregue. Prova não é obrigatória, mas quando você tem, use!</p>
+      </div>
+      <div class="card" style="border-top: 4px solid var(--amarelo);">
+        <div class="card-icon">CTA</div>
+        <h4>4. Chamada para Ação</h4>
+        <p>Diga o que a pessoa deve fazer agora:</p>
+        <ul style="margin-top:8px; padding-left:18px; font-size:.9rem;">
+          <li>"Chama no WhatsApp pra pedir."</li>
+          <li>"Comenta aqui que te mando o link."</li>
+          <li>"Salva esse vídeo pra não esquecer."</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modelo-box" style="margin-top:24px;">
+      <div class="mod-titulo">Exemplo completo de roteiro — Salgados</div>
+      <pre>GANCHO: "Salgado fresquinho na sua porta por R$ 3,50?"
+CONTEUDO: "Faco coxinha, esfiha e bolinha de queijo.
+   Tudo feito na hora, entrego no bairro."
+PROVA: [mostra foto de clientes com o produto]
+CTA: "Manda mensagem no WhatsApp para pedir. Link na bio!"</pre>
+    </div>
+    <div class="erro-box">
+      <div class="erro-titulo">Erro comum — Começar com apresentação</div>
+      <p>"Oi gente, eu sou a Fulana, bem-vindos ao meu canal..." Isso faz as pessoas pularem. O algoritmo conta esse pulo contra você. Vá direto ao ponto!</p>
+    </div>
+    <div class="exercicio">
+      <h4>Exercício 5 — Monte seu roteiro</h4>
+      <p>Gancho (primeiros 2 segundos):</p>
+      <div class="linha-escrita"></div>
+      <p>Conteúdo (1 ideia):</p>
+      <div class="linha-escrita"></div>
+      <p>Prova (opcional):</p>
+      <div class="linha-escrita"></div>
+      <p>Chamada para ação:</p>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S6 -->
+<section id="s6">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">6</div>
+      <h2>Gravação prática com celular</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Aprender a gravar com o celular que você tem, usando recursos que já existem na sua casa. Sem comprar nada.
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">Celular</div><h4>Posição do celular</h4><p>Grave sempre na <strong>vertical</strong> (modo retrato). O TikTok é vertical. Se precisar apoiar, use um copo, uma pilha de livros ou compre um mini tripé (bem barato).</p></div>
+      <div class="card"><div class="card-icon">Luz</div><h4>Luz natural</h4><p>A melhor luz é de graça: a janela da sua casa. Fique de <strong>frente</strong> para a janela (não de costas). Evite gravar com o sol direto na câmera.</p></div>
+      <div class="card"><div class="card-icon">Som</div><h4>Som</h4><p>Grave num ambiente quieto. Fale perto do celular. Se precisar de fone com microfone, o de R$ 20 do mercadinho já resolve.</p></div>
+      <div class="card"><div class="card-icon">Cenario</div><h4>Cenário</h4><p>Fundo limpo e organizado. Pode ser uma parede, uma mesa arrumada, seu espaço de trabalho. Não precisa ser estúdio, precisa ser <strong>limpo</strong>.</p></div>
+      <div class="card"><div class="card-icon">Enquadramento</div><h4>Enquadramento</h4><p>Coloque seu rosto e ombros no centro do vídeo (meio corpo). Não corte a cabeça no alto, nem mostre os pés sem querer.</p></div>
+      <div class="card"><div class="card-icon">Duracao</div><h4>Duração ideal</h4><p>Para começar: <strong>15 a 30 segundos</strong>. Suficiente para entregar a mensagem e não perder a atenção do espectador.</p></div>
+    </div>
+    <h3 style="margin-top:28px;">Checklist de gravação</h3>
+    <ul class="checklist">
+      <li>Celular na posição vertical</li>
+      <li>Frente para a janela (luz natural)</li>
+      <li>Ambiente quieto</li>
+      <li>Fundo limpo e organizado</li>
+      <li>Rosto centralizado no vídeo</li>
+      <li>Bateria acima de 20%</li>
+      <li>Roteiro anotado antes de gravar</li>
+      <li>Vídeo entre 15 e 30 segundos</li>
+      <li>Gravei 2 ou 3 tomadas e escolhi a melhor</li>
+    </ul>
+    <div class="dica" style="margin-top:20px;">
+      <div class="dica-titulo">Dica — Grave mais de uma vez</div>
+      <p>Grave o mesmo vídeo 2 ou 3 vezes. A primeira tende a ser a mais travada. A terceira costuma ser a melhor.</p>
+    </div>
+    <div class="erro-box">
+      <div class="erro-titulo">Erro comum — Fundo bagunçado</div>
+      <p>O cliente percebe o ambiente. Um fundo bagunçado passa imagem de desorganização. 5 minutos arrumando o cenário fazem muita diferença.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S7 -->
+<section id="s7">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">7</div>
+      <h2>Publicação — o básico que funciona</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Publicar seu vídeo do jeito certo, com legenda, hashtags e frequência que traz resultado sem te estressar.
+    </div>
+    <h3>Legenda curta e clara</h3>
+    <p>A legenda complementa o vídeo. Não precisa repetir tudo, acrescente o que falta. Use frases curtas. Termine sempre com uma chamada para ação.</p>
+    <div class="modelo-box">
+      <div class="mod-titulo">Modelos de legenda</div>
+      <pre>Cabelo hidratado e sem gastar muito.
+Agende aqui no WhatsApp (link na bio)
+
+---
+
+Marmita fresquinha toda terca e quinta.
+Peca no link da bio
+
+---
+
+Saiu o estoque novo! Pecas a partir de R$ 39.
+Chama no WhatsApp antes de acabar (link na bio)</pre>
+    </div>
+    <h3 style="margin-top:24px;">Hashtags — simples e relevantes</h3>
+    <p>Use de <strong>3 a 5 hashtags</strong>. Misture: uma ampla, duas do nicho e uma local.</p>
+    <div class="modelo-box">
+      <div class="mod-titulo">Exemplos</div>
+      <pre>Beleza: #cabeleireiro #transformacao #cabeleireirarj
+Comida: #comidacaseira #marmita #alimentacaosaudavel
+Moda: #modafeminina #roupasbaratas #modamare</pre>
+    </div>
+    <h3 style="margin-top:24px;">Horário e frequência</h3>
+    <div class="dica">
+      <div class="dica-titulo">Dica — A verdade sobre horário</div>
+      <p>Não existe "horário mágico". O que importa é <strong>constância</strong>. Publique 3 vezes por semana nos mesmos dias. Com o tempo, o TikTok aprende quando seu público está ativo.</p>
+    </div>
+    <p><strong>Frequência mínima recomendada:</strong> 3 vezes por semana. Se conseguir todos os dias, ótimo. Se não, tudo bem. Não prometa para si mesmo o que não vai conseguir cumprir.</p>
+    <div class="erro-box">
+      <div class="erro-titulo">Erro comum — Sumir por semanas e voltar em massa</div>
+      <p>Postar 10 vídeos num dia e sumir por 3 semanas é pior do que postar 1 vídeo por dia. O algoritmo valoriza consistência, não quantidade.</p>
+    </div>
+    <div class="exercicio">
+      <h4>Exercício 7 — Seus dias de publicação</h4>
+      <p>Quais 3 dias da semana você vai publicar?</p>
+      <div class="linha-escrita"></div>
+      <p>Que horário costuma ter alguns minutos livres?</p>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S8 — NOVA SEÇÃO: ÁUDIOS EM ALTA -->
+<section id="s8">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">8</div>
+      <h2>O Poder dos Áudios em Alta</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Entender o que são os áudios em alta (trending audios), onde encontrá-los e como usá-los para o seu negócio aparecer para muito mais gente, sem precisar criar nada do zero.
+    </div>
+
+    <h3>O que é um áudio em alta?</h3>
+    <p>É uma música, fala ou efeito sonoro que está sendo muito usado no TikTok naquele momento. Quando muita gente usa o mesmo áudio, o algoritmo entende que aquilo está em tendência e <strong>espalha os vídeos com esse áudio para muito mais pessoas</strong>, inclusive pessoas que nunca ouviram falar de você.</p>
+    <p>Pense assim: é como entrar numa conversa que já está acontecendo. O cliente já conhece a música, já está no clima, e o seu produto aparece no meio disso.</p>
+
+    <div class="dica">
+      <div class="dica-titulo">Dica — A mensagem central</div>
+      <p><strong>Use a música que já está na cabeça do seu cliente.</strong> Você não precisa inventar nada. Só precisa adaptar o que já está funcionando para o seu negócio.</p>
+    </div>
+
+    <h3 style="margin-top:28px;">Como encontrar áudios em alta</h3>
+    <div class="audio-steps">
+      <div class="audio-step">
+        <h4>Na tela "Para Você"</h4>
+        <p>Fique atento a vídeos com seta para cima na musiquinha (indica audio em alta). Toque no nome do audio para ver quantos vídeos usam aquela faixa.</p>
+      </div>
+      <div class="audio-step">
+        <h4>Na ferramenta de criação</h4>
+        <p>Clique em "+" para criar um vídeo, toque em "Sons" e depois em "Em Alta". O TikTok lista automaticamente os áudios mais usados naquele momento.</p>
+      </div>
+      <div class="audio-step">
+        <h4>Na aba "Descobrir"</h4>
+        <p>A aba Descobrir (lupa) mostra tendências do momento, incluindo áudios. Use para se antecipar antes que todo mundo comece a usar o mesmo som.</p>
+      </div>
+      <div class="audio-step">
+        <h4>Observando concorrentes</h4>
+        <p>Siga outras contas do seu nicho. Se dois ou três perfis diferentes usaram o mesmo audio na mesma semana, ele está em alta e pode funcionar para você também.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px;">Como adaptar o áudio para o seu negócio</h3>
+    <p>Você não precisa dançar, fazer lip sync ou imitar o que outra pessoa fez. Use o audio de fundo enquanto mostra o seu produto, o seu processo ou a sua oferta. O som cria o clima, o seu conteúdo entrega a mensagem.</p>
+
+    <div class="modelo-box">
+      <div class="mod-titulo">Exemplos de adaptação por nicho</div>
+      <pre>Audio com ritmo animado em alta
+ Confeitaria: mostra o bolo sendo decorado no ritmo da musica
+ Moda: troca de looks no ritmo dos cortes da musica
+ Servico: antes e depois do trabalho concluido
+
+Audio com fala de tendencia (ex: "isso aqui mudou minha vida")
+ Cabeleireiro: "Isso aqui mudou o cabelo da minha cliente"
+ Marmita: "Isso aqui resolveu meu almoco da semana"
+ Limpeza: "Isso aqui deixou a casa nova em 2 horas"</pre>
+    </div>
+
+    <div class="erro-box">
+      <div class="erro-titulo">Erro comum — Usar audio velho</div>
+      <p>Áudio que bombou há 3 meses já não tem o mesmo alcance. Se você ouvir alguém comentando "nossa, todo mundo está usando essa musica", corra para usá-la ainda nessa semana.</p>
+    </div>
+
+    <div class="exercicio">
+      <h4>Exercício 8 — Encontre seu primeiro áudio em alta</h4>
+      <p>Abra o TikTok agora, vá em Sons (ao criar um vídeo) e anote o nome de 2 áudios em alta que você acha que combina com o seu negócio:</p>
+      <p>Audio 1:</p>
+      <div class="linha-escrita"></div>
+      <p>Como vou usar no meu negócio:</p>
+      <div class="linha-escrita"></div>
+      <p>Audio 2:</p>
+      <div class="linha-escrita"></div>
+      <p>Como vou usar no meu negócio:</p>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S9 — NOVA SEÇÃO: TIKTOK LIVE -->
+<section id="s9">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">9</div>
+      <h2>TikTok LIVE para Vender</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Entender como fazer uma LIVE no TikTok para vender mais, com um checklist simples para quem nunca transmitiu ao vivo.
+    </div>
+
+    <h3>Por que fazer LIVE?</h3>
+    <p>A LIVE é o formato com maior alcance imediato no TikTok. Enquanto você está ao vivo, o aplicativo notifica seus seguidores e coloca a sua transmissão em destaque para novos espectadores. Além disso, a interação em tempo real gera confiança muito mais rápido do que qualquer vídeo gravado.</p>
+
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">Conexao</div><h4>Confiança imediata</h4><p>O cliente vê você ao vivo, faz perguntas e recebe respostas na hora. Isso quebra qualquer barreira de desconfiança muito mais rápido do que um vídeo editado.</p></div>
+      <div class="card"><div class="card-icon">Alcance</div><h4>Mais alcance</h4><p>Durante a LIVE, o TikTok mostra a transmissão para pessoas que ainda não te seguem. É uma oportunidade de chegar a novos clientes sem gastar nada.</p></div>
+      <div class="card"><div class="card-icon">Oferta</div><h4>Oferta exclusiva</h4><p>Criar uma condição especial só para quem está assistindo ao vivo gera urgência real e incentiva a compra na hora.</p></div>
+      <div class="card"><div class="card-icon">Simples</div><h4>Mais simples do que parece</h4><p>Não precisa de roteiro perfeito. Uma LIVE de 15 a 20 minutos mostrando e explicando seus produtos já é suficiente para gerar resultados.</p></div>
+    </div>
+
+    <h3 style="margin-top:32px;">Checklist para a sua primeira LIVE</h3>
+    <p>Siga esses passos antes, durante e depois da transmissão:</p>
+
+    <h4 style="margin-top:20px; color:var(--azul-principal);">Antes da LIVE</h4>
+    <ol class="live-checklist">
+      <li><strong>Defina um objetivo claro.</strong> Exemplo: vender 10 unidades do produto X, conseguir 20 novos seguidores ou divulgar a agenda da semana.</li>
+      <li><strong>Divulgue com antecedência.</strong> Grave 1 ou 2 vídeos nos dias anteriores avisando a data e o horário da LIVE. Diga o que vai rolar de especial.</li>
+      <li><strong>Prepare uma oferta exclusiva.</strong> Desconto, brinde, frete grátis ou condição especial só para quem assistir ao vivo. Isso é o que faz as pessoas pararem para assistir.</li>
+      <li><strong>Organize o cenário.</strong> Fundo limpo, produtos visíveis, boa iluminação. Deixe tudo arrumado antes de apertar o botão de transmitir.</li>
+      <li><strong>Teste a conexão.</strong> Certifique que o Wi-Fi ou dados estão funcionando bem. Faça um teste rápido antes do horário marcado.</li>
+    </ol>
+
+    <h4 style="margin-top:24px; color:var(--azul-principal);">Durante a LIVE</h4>
+    <ol class="live-checklist">
+      <li><strong>Diga o que você vende nos primeiros 2 minutos.</strong> Quem entra no meio não sabe quem é você. Apresente-se e explique a oferta logo no começo e repita isso de tempos em tempos.</li>
+      <li><strong>Responda os comentários em voz alta.</strong> "A Maria perguntou sobre entrega, sim Maria, entrego no bairro, chama no WhatsApp depois da live." Isso mostra que você está presente e gera mais interação.</li>
+      <li><strong>Mostre o produto com as mãos.</strong> Segure, demonstre, abra, experimente. Quanto mais você mostrar, mais vontade o cliente vai ter.</li>
+      <li><strong>Repita a oferta e o link do WhatsApp</strong> a cada 5 minutos aproximadamente. Muita gente entra no meio da LIVE e precisa ouvir isso.</li>
+    </ol>
+
+    <h4 style="margin-top:24px; color:var(--azul-principal);">Depois da LIVE</h4>
+    <ol class="live-checklist">
+      <li><strong>Responda todos os comentários</strong> que ficaram sem resposta durante a transmissão.</li>
+      <li><strong>Publique um vídeo curto</strong> com o resumo da LIVE e a oferta, para quem não assistiu ao vivo ter outra chance de comprar.</li>
+      <li><strong>Anote o que funcionou</strong> e o que pode melhorar para a próxima transmissão.</li>
+    </ol>
+
+    <div class="dica" style="margin-top:24px;">
+      <div class="dica-titulo">Dica — Duração ideal para a primeira LIVE</div>
+      <p>Entre 15 e 30 minutos. Tempo suficiente para apresentar bem os produtos e responder as dúvidas, sem cansar quem está assistindo.</p>
+    </div>
+
+    <div class="exercicio">
+      <h4>Exercício 9 — Planeje sua primeira LIVE</h4>
+      <p>Qual será o objetivo da sua primeira LIVE?</p>
+      <div class="linha-escrita"></div>
+      <p>Qual será a oferta exclusiva para quem assistir ao vivo?</p>
+      <div class="linha-escrita"></div>
+      <p>Que data e horário você quer fazer?</p>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S10 -->
+<section id="s10">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">10</div>
+      <h2>Como transformar visualizações em vendas</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Esta é a parte mais importante: como converter quem assistiu o vídeo em cliente que paga.
+    </div>
+    <h3>O que responder nos comentários</h3>
+    <p>Todo comentário é uma oportunidade de venda. Responda rápido e leve para o WhatsApp.</p>
+    <div class="modelo-box">
+      <div class="mod-titulo">Frases prontas para comentários</div>
+      <pre>"Quanto custa?" — "Oi! O valor e R$ [X]. Manda mensagem no WhatsApp que te passo todos os detalhes."
+
+"Tem entrega?" — "Sim! Entrego no [bairro]. Chama no WhatsApp que a gente combina."
+
+"Adorei!" — "Fico feliz! Se quiser saber mais, e so chamar no WhatsApp."
+
+"Tem [produto especifico]?" — "Tem sim! Me chama no WhatsApp que eu te mando as opcoes disponiveis."</pre>
+    </div>
+    <h3 style="margin-top:24px;">Como organizar o WhatsApp</h3>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">Boas-vindas</div><h4>Mensagem fixa</h4><p>Configure uma mensagem automática de boas-vindas: "Oi! Que bom que você veio pelo TikTok. Me conta o que você precisa."</p></div>
+      <div class="card"><div class="card-icon">Catalogo</div><h4>Catálogo</h4><p>Use o catálogo do WhatsApp Business para listar seus produtos com foto e preço. O cliente compra sem nem precisar perguntar.</p></div>
+      <div class="card"><div class="card-icon">Link</div><h4>Link direto</h4><p>Crie seu link de WhatsApp em wa.me/55[seu número] e coloque na bio do TikTok. Isso facilita muito o contato.</p></div>
+    </div>
+    <h3 style="margin-top:24px;">Como criar uma oferta simples</h3>
+    <p>Uma boa oferta tem 4 elementos:</p>
+    <div class="modelo-box">
+      <div class="mod-titulo">Fórmula da oferta</div>
+      <pre>[PRODUTO] + [PRECO] + [CONDICAO] + [URGENCIA REAL]
+
+Exemplo:
+"Hidratacao completa + escova por R$ 60.
+Parcelo em 2x sem juros.
+Tenho agenda disponivel so ate sexta."</pre>
+    </div>
+    <div class="dica">
+      <div class="dica-titulo">Dica — Urgência real, não mentira</div>
+      <p>"Só hoje!" quando você faz todo dia perde a credibilidade. Crie urgências verdadeiras: estoque limitado, agenda lotando, promoção de aniversário com data definida.</p>
+    </div>
+    <h3 style="margin-top:24px;">Como medir se está dando certo</h3>
+    <p>No início, foque em 3 métricas simples:</p>
+    <ul class="checklist">
+      <li><strong>Visualizações:</strong> Quantas pessoas viram? (Bom sinal: crescendo a cada semana)</li>
+      <li><strong>Mensagens no WhatsApp:</strong> Quantas vieram do TikTok? (Pergunte: "Me encontrou pelo TikTok?")</li>
+      <li><strong>Vendas:</strong> Quantas compras vieram de pessoas que viram o vídeo?</li>
+    </ul>
+    <div class="exercicio">
+      <h4>Exercício 10 — Sua oferta da semana</h4>
+      <p>Preencha sua oferta:</p>
+      <p>Produto: <span style="display:inline-block;width:200px;border-bottom:1px solid #999;"></span></p>
+      <div class="linha-escrita"></div>
+      <p>Preço + condição:</p>
+      <div class="linha-escrita"></div>
+      <p>Urgência real:</p>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S11 — NOVA SEÇÃO: PRODUTOR DE CONTEÚDO LOCAL -->
+<section id="s11">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">11</div>
+      <h2>Seja um Produtor de Conteúdo Local</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Ir além de só vender: tornar-se uma referência da sua comunidade, celebrar a cultura local e criar conexão real com as pessoas do seu bairro.
+    </div>
+
+    <h3>Mais do que um vendedor: seja uma referência</h3>
+    <p>Quem só anuncia produto no TikTok vende. Quem se torna parte da comunidade, fatura. Existe uma diferença enorme entre o perfil que só posta preço e o perfil que as pessoas acompanham porque sentem que aquela pessoa entende a realidade delas.</p>
+    <p>Você mora no mesmo bairro que seu cliente. Você conhece as ruas, as festas, os problemas e as alegrias do lugar. Isso é um diferencial que nenhuma grande marca consegue imitar.</p>
+
+    <div class="dica">
+      <div class="dica-titulo">Dica — A virada de chave</div>
+      <p>Pense em si mesmo como o <strong>canal oficial do seu bairro</strong>. Um lugar onde as pessoas aprendem algo útil, se identificam com a realidade local e ainda descobrem onde comprar bem.</p>
+    </div>
+
+    <h3 style="margin-top:28px;">Tipos de conteúdo que constroem comunidade</h3>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">Cultura</div>
+        <h4>Celebre a cultura local</h4>
+        <p>Mostre festas, costumes, comidas típicas e momentos especiais do seu bairro. As pessoas adoram ver o lugar onde moram sendo valorizado.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">Empreendedores</div>
+        <h4>Apresente outros empreendedores</h4>
+        <p>Indique o vizinho padeiro, a costureira da rua de trás, o mecânico de confiança. Essa generosidade volta como reconhecimento e seguidores fiéis.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">Eventos</div>
+        <h4>Divulgue eventos da região</h4>
+        <p>Feira, show, evento de rua, mutirão comunitário: mostre que você está presente na vida do bairro, não só na hora de vender.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">Dicas</div>
+        <h4>Dê dicas úteis do seu nicho</h4>
+        <p>Cabeleireiro? Ensine como hidratar o cabelo em casa. Cozinheiro? Mostre como conservar alimentos. Quem educa conquista confiança antes mesmo da primeira venda.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">Historia</div>
+        <h4>Conte sua história</h4>
+        <p>Por que você começou? Qual foi a maior dificuldade? Contar histórias reais cria identificação e faz as pessoas torcerem pelo seu sucesso.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">Clientes</div>
+        <h4>Mostre as pessoas do bairro</h4>
+        <p>Clientes satisfeitos, vizinhos, parceiros. Com permissão deles, claro. Rosto real de pessoas reais da comunidade gera muito mais engajamento do que qualquer produto.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px;">A regra dos 3 tipos de vídeo por semana</h3>
+    <p>Uma mistura equilibrada que funciona bem para empreendedores locais:</p>
+    <div class="dias-grid" style="margin-top:14px;">
+      <div class="dia-card">
+        <div class="dia-num">Tipo 1</div>
+        <h4>Venda direta</h4>
+        <p>Produto, oferta, preço. O vídeo que converte. Pelo menos 1 por semana.</p>
+      </div>
+      <div class="dia-card">
+        <div class="dia-num">Tipo 2</div>
+        <h4>Conteúdo útil</h4>
+        <p>Dica, tutorial, bastidor. O vídeo que educa e gera confiança. Pelo menos 1 por semana.</p>
+      </div>
+      <div class="dia-card">
+        <div class="dia-num">Tipo 3</div>
+        <h4>Conexão local</h4>
+        <p>Cultura, comunidade, história. O vídeo que cria pertencimento. Pelo menos 1 por semana.</p>
+      </div>
+    </div>
+
+    <div class="dica" style="margin-top:24px;">
+      <div class="dica-titulo">Dica — Consistência cria autoridade</div>
+      <p>Quando as pessoas do bairro pensam em comprar o que você vende, o primeiro nome que vem à cabeça precisa ser o seu. Isso só acontece com presença constante, não com um único vídeo viral.</p>
+    </div>
+
+    <div class="exercicio">
+      <h4>Exercício 11 — Seu conteúdo de comunidade</h4>
+      <p>Pense em algo do seu bairro que você poderia mostrar num vídeo (evento, pessoa, costume, lugar):</p>
+      <div class="linha-escrita"></div>
+      <div class="linha-escrita"></div>
+      <p>Que dica útil do seu nicho você poderia ensinar em 30 segundos?</p>
+      <div class="linha-escrita"></div>
+      <div class="linha-escrita"></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S12 -->
+<section id="s12">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">12</div>
+      <h2>Plano de ação de 7 dias</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Sair daqui com um plano claro para a próxima semana, sem pressão, sem perfeição, só ação.
+    </div>
+    <div class="dias-grid">
+      <div class="dia-card"><div class="dia-num">Dia 1 — Segunda</div><h4>Instalar e configurar</h4><p>Baixe o TikTok, crie a conta, configure a bio e coloque o link do WhatsApp.</p></div>
+      <div class="dia-card"><div class="dia-num">Dia 2 — Terça</div><h4>Primeiro vídeo</h4><p>Grave um vídeo de bastidores ou produto em uso. Não precisa ser perfeito. Publique!</p></div>
+      <div class="dia-card"><div class="dia-num">Dia 3 — Quarta</div><h4>Responder e engajar</h4><p>Responda todos os comentários. Siga 10 contas do seu nicho. Observe o que funciona.</p></div>
+      <div class="dia-card"><div class="dia-num">Dia 4 — Quinta</div><h4>Segundo vídeo</h4><p>Grave um "antes e depois" ou uma prova social. Use o roteiro de 4 partes aprendido aqui.</p></div>
+      <div class="dia-card"><div class="dia-num">Dia 5 — Sexta</div><h4>Oferta da semana</h4><p>Grave um vídeo com oferta simples. Produto, preço e urgência real. Curto e direto.</p></div>
+      <div class="dia-card"><div class="dia-num">Dia 6 — Sábado</div><h4>Analise os dados</h4><p>Qual vídeo teve mais visualização? Qual gerou mais mensagens? Anote o que aprendeu.</p></div>
+      <div class="dia-card"><div class="dia-num">Dia 7 — Domingo</div><h4>Planejar semana 2</h4><p>Escreva 3 ideias de vídeo para semana seguinte. Defina os dias e horários de publicação.</p></div>
+    </div>
+    <h3 style="margin-top:28px;">Checklist de publicação (usar toda vez)</h3>
+    <ul class="checklist">
+      <li>Roteiro anotado antes de gravar</li>
+      <li>Gancho forte nos primeiros 2 segundos</li>
+      <li>Vídeo na vertical, com boa luz e som</li>
+      <li>Duração entre 15 e 45 segundos</li>
+      <li>Legenda clara com chamada para ação</li>
+      <li>3 a 5 hashtags relevantes adicionadas</li>
+      <li>Audio em alta escolhido (quando possível)</li>
+      <li>Link do WhatsApp na bio atualizado</li>
+      <li>Respondeu comentários do vídeo anterior</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- S13 -->
+<section id="s13">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">13</div>
+      <h2>Checklists finais</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Objetivo desta seção</span>
+      Três checklists para usar sempre: antes de publicar, ao configurar o perfil e ao fechar uma venda.
+    </div>
+    <h3>Checklist do Perfil</h3>
+    <ul class="checklist">
+      <li>Nome de usuário simples e fácil de lembrar</li>
+      <li>Foto de perfil com rosto visível ou produto em destaque</li>
+      <li>Bio com o que vende, localização e chamada para WhatsApp</li>
+      <li>Link do WhatsApp ativo na bio</li>
+      <li>Conta configurada como pública</li>
+      <li>Pelo menos 3 vídeos publicados antes de divulgar o perfil</li>
+    </ul>
+    <h3 style="margin-top:28px;">Checklist do Vídeo</h3>
+    <ul class="checklist">
+      <li>Gancho forte nos primeiros 2 segundos</li>
+      <li>Uma ideia central clara</li>
+      <li>Imagem na vertical, estável e com boa iluminação</li>
+      <li>Som limpo e audível</li>
+      <li>Duração entre 15 e 45 segundos</li>
+      <li>Chamada para ação ao final</li>
+      <li>Legenda objetiva com CTA</li>
+      <li>3 a 5 hashtags relevantes</li>
+      <li>Audio em alta adicionado (quando possível)</li>
+    </ul>
+    <h3 style="margin-top:28px;">Checklist de Venda</h3>
+    <ul class="checklist">
+      <li>Respondeu comentários com convite para WhatsApp</li>
+      <li>Mensagem automática de boas-vindas ativa no WhatsApp</li>
+      <li>Catálogo do WhatsApp Business atualizado com fotos e preços</li>
+      <li>Oferta da semana definida (produto, preço, condição e urgência)</li>
+      <li>Perguntou ao cliente como encontrou você ("foi pelo TikTok?")</li>
+      <li>Anotou quantas mensagens vieram do TikTok esta semana</li>
+    </ul>
+    <h3 style="margin-top:28px;">Checklist da LIVE</h3>
+    <ul class="checklist">
+      <li>Objetivo da LIVE definido</li>
+      <li>Divulgação feita com antecedência (1 ou 2 vídeos antes)</li>
+      <li>Oferta exclusiva para quem assistir ao vivo preparada</li>
+      <li>Cenário organizado e iluminado</li>
+      <li>Conexão de internet testada</li>
+      <li>Produtos visíveis e prontos para mostrar</li>
+      <li>Vídeo de resumo publicado depois da LIVE</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- PROMPTS -->
+<section id="prompts">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">+</div>
+      <h2>Prompts prontos para empreendedores usarem (copiar e colar)</h2>
+    </div>
+    <div class="objetivo-box">
+      <span>Como usar</span>
+      Copie o prompt usando o botão abaixo de cada bloco, abra o ChatGPT ou outro assistente de IA, cole o texto, preencha os campos entre colchetes e receba suas ideias prontas.
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>1. Prompt para ideias de conteúdo por tipo de negócio</h3>
+      <div class="modelo-box" id="p1">
+        <div class="mod-titulo">Preencha: produto, cidade, diferencial</div>
+        <pre>Eu tenho um negócio de [TIPO DE NEGÓCIO] em [BAIRRO/CIDADE].
+Vendo [PRODUTO OU SERVIÇO PRINCIPAL].
+Meu diferencial é [O QUE ME FAZ DIFERENTE].
+Me dê 10 ideias de vídeo para o TikTok que vão atrair clientes locais.
+As ideias devem ser simples de gravar com celular, sem edição complexa.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Comida</div>
+        <pre>Eu tenho um negócio de marmitas caseiras em Maré, Rio de Janeiro.
+Vendo marmitas fitness e tradicionais.
+Meu diferencial é entrega grátis no bairro na mesma hora.
+Me dê 10 ideias de vídeo para o TikTok que vão atrair clientes locais.
+As ideias devem ser simples de gravar com celular, sem edição complexa.</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p1', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>2. Prompt para roteiros curtos com gancho</h3>
+      <div class="modelo-box" id="p2">
+        <div class="mod-titulo">Preencha: produto, público, preço</div>
+        <pre>Crie 5 roteiros curtos para TikTok (15 a 30 segundos cada).
+Produto/serviço: [PRODUTO]
+Público: [QUEM COMPRA]
+Preço médio: R$ [VALOR]
+Cada roteiro deve começar com um gancho forte (frase que prende a atenção).
+Depois mostrar o produto. Terminar com chamada para WhatsApp.
+Linguagem simples, brasileira, sem termos técnicos.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Beleza</div>
+        <pre>Crie 5 roteiros curtos para TikTok (15 a 30 segundos cada).
+Produto/serviço: Progressiva e escova
+Público: Mulheres que querem cabelo liso sem gastar muito
+Preço médio: R$ 80
+Cada roteiro deve começar com um gancho forte.
+Depois mostrar o produto. Terminar com chamada para WhatsApp.
+Linguagem simples, brasileira, sem termos técnicos.</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p2', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>3. Prompt para legendas simples que vendem</h3>
+      <div class="modelo-box" id="p3">
+        <div class="mod-titulo">Preencha: produto, oferta, CTA</div>
+        <pre>Escreva 5 legendas para TikTok para o seguinte negócio:
+Produto: [PRODUTO]
+Oferta: [PREÇO OU CONDIÇÃO ESPECIAL]
+Chamada para ação: [WHATSAPP / COMENTÁRIOS / LINK NA BIO]
+As legendas devem ser curtas (máx. 3 linhas), em tom amigável,
+sem parecer propaganda, e terminar sempre com uma ação clara.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Moda</div>
+        <pre>Produto: Blusas femininas
+Oferta: 2 por R$ 60, entregamos no bairro
+Chamada para ação: WhatsApp no link da bio
+As legendas devem ser curtas, amigáveis, sem parecer propaganda.</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p3', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>4. Prompt para bio do perfil</h3>
+      <div class="modelo-box" id="p4">
+        <div class="mod-titulo">Preencha: negócio, localização, diferencial</div>
+        <pre>Crie 3 versões de bio para perfil do TikTok:
+Negócio: [TIPO DE NEGÓCIO]
+O que vende: [PRODUTO/SERVIÇO]
+Localização: [BAIRRO E CIDADE]
+Diferencial: [O QUE ME FAZ ESPECIAL]
+Cada bio deve ter no máximo 3 linhas e terminar com chamada para WhatsApp.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Serviço</div>
+        <pre>Negócio: Eletricista
+O que vende: Instalações e reparos elétricos rápidos
+Localização: Jacarezinho, Rio de Janeiro
+Diferencial: Atendo no mesmo dia e dou garantia de 1 ano</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p4', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>5. Prompt para calendário de 7 dias</h3>
+      <div class="modelo-box" id="p5">
+        <div class="mod-titulo">Preencha: nicho, frequência</div>
+        <pre>Crie um calendário de conteúdo para TikTok de 7 dias para:
+Tipo de negócio: [NICHO]
+Produto principal: [PRODUTO]
+Frequência: [3x ou 5x por semana]
+Para cada dia: sugira o tipo de vídeo, o gancho e a legenda.
+Inclua pelo menos 1 vídeo de conteúdo sobre a comunidade local.
+Formato simples, em tabela ou lista numerada.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Confeitaria</div>
+        <pre>Tipo de negócio: Confeitaria artesanal
+Produto principal: Bolos personalizados e docinhos de festa
+Frequência: 3x por semana (segunda, quarta, sexta)
+Para cada dia: tipo de vídeo, gancho e legenda.
+Inclua pelo menos 1 vídeo de conteúdo sobre a comunidade local.</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p5', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>6. Prompt para responder comentários e levar ao WhatsApp</h3>
+      <div class="modelo-box" id="p6">
+        <div class="mod-titulo">Preencha: negócio, produto</div>
+        <pre>Crie 10 respostas prontas para comentários no TikTok para um negócio de [NEGÓCIO].
+Os comentários mais comuns são: perguntas sobre preço, entrega, disponibilidade e qualidade.
+Cada resposta deve ser simpática, breve e terminar levando o cliente para o WhatsApp.
+Não use linguagem formal demais. Tom amigável e brasileiro.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Pet Shop</div>
+        <pre>Crie 10 respostas prontas para comentários no TikTok para um pet shop.
+Comentários mais comuns: banho e tosa, preço, horário, raças atendidas.
+Cada resposta deve ser simpática, breve e levar o cliente para o WhatsApp.</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p6', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>7. Prompt para roteiro de TikTok LIVE</h3>
+      <div class="modelo-box" id="p7">
+        <div class="mod-titulo">Preencha: negócio, produto, oferta da live</div>
+        <pre>Crie um roteiro simples para uma TikTok LIVE de 20 minutos para:
+Negócio: [TIPO DE NEGÓCIO]
+Produto em destaque: [PRODUTO]
+Oferta exclusiva da live: [DESCONTO OU CONDIÇÃO ESPECIAL]
+O roteiro deve ter: abertura (apresentação e oferta), demonstração do produto,
+resposta a perguntas frequentes, reforço da oferta e encerramento.
+Linguagem descontraída, como se fosse uma conversa.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Costureira</div>
+        <pre>Negócio: Costureira e consertos em geral
+Produto em destaque: Ajuste de roupas (calca, vestido, blusa)
+Oferta exclusiva da live: 20% de desconto para pedidos feitos durante a live
+O roteiro deve ter: abertura, demonstração, perguntas frequentes, reforço da oferta e encerramento.
+Linguagem descontraída, como se fosse uma conversa.</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p7', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+    <div class="prompt-bloco">
+      <h3>8. Prompt para vídeo de comunidade e cultura local</h3>
+      <div class="modelo-box" id="p8">
+        <div class="mod-titulo">Preencha: bairro, tema local, negócio</div>
+        <pre>Crie 5 ideias de vídeo para o TikTok que celebrem a cultura e a comunidade local.
+Bairro/região: [NOME DO BAIRRO OU CIDADE]
+Meu negócio: [TIPO DE NEGÓCIO]
+Os vídeos devem conectar o meu negócio com a vida do bairro, sem parecer publicidade.
+O objetivo é gerar identificação e aproximação com os moradores da região.</pre>
+        <br>
+        <div class="exemplo-tag">Exemplo preenchido — Padaria</div>
+        <pre>Crie 5 ideias de vídeo para o TikTok que celebrem a cultura e a comunidade local.
+Bairro/região: Maré, Rio de Janeiro
+Meu negócio: Padaria artesanal
+Os vídeos devem conectar o meu negócio com a vida do bairro, sem parecer publicidade.
+O objetivo é gerar identificação e aproximação com os moradores da região.</pre>
+        <button class="copy-btn" onclick="copiarPrompt('p8', this)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar prompt
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- CAPCUT -->
+<section id="capcut" style="background:var(--azul-principal);">
+  <div class="container">
+    <div class="secao-header" style="border-left-color: var(--amarelo);">
+      <div class="secao-numero" style="background:var(--amarelo); color:var(--azul-principal);">IA</div>
+      <h2 style="color:var(--branco);">Prompt para criar vídeo no CapCut com influenciadora virtual</h2>
+    </div>
+    <p style="color:#d0e6f0; margin-bottom:24px;">Use estes prompts no CapCut, Pika Labs, Runway, HeyGen ou outra ferramenta de geração de vídeo com IA. Escolha a versão em português ou inglês conforme a ferramenta exigir.</p>
+
+    <div class="modelo-box" id="capcut-pt" style="background:rgba(255,255,255,.07); border-color:var(--amarelo);">
+      <div class="mod-titulo" style="color:var(--amarelo);">Versão em português</div>
+      <pre style="color:#e2eaf5;">Crie um vídeo de 8 a 12 segundos com uma influenciadora virtual.
+
+PERSONAGEM:
+Mulher negra brasileira, entre 25 e 35 anos. Aparência natural, bonita e carismática.
+Cabelos naturais ou trançados. Expressão receptiva e confiante.
+Roupa clean: blusa básica clara ou pastel, neutro comercial.
+Esta é uma personagem criada por inteligência artificial, não é pessoa real.
+
+VISUAL:
+Luz suave de estúdio difusa (softbox frontal). Fundo clean: branco ou bege claro.
+Imagem realista, qualidade comercial/profissional. Sem filtros exagerados.
+Movimento cinematográfico lento (câmera suave, sem cortes bruscos).
+
+ENQUADRAMENTO:
+Meio corpo. Rosto e parte superior visíveis. Centralizada no frame vertical (9:16).
+
+AÇÃO:
+Ela segura o produto com as duas mãos, levanta levemente e sorri para a câmera.
+Depois vira o produto de frente, como se estivesse apresentando.
+Gesto natural, como uma amiga mostrando algo que gostou.
+
+CRIE 3 VARIAÇÕES:
+1. Ela olha direto para a câmera e sorri, produto à frente.
+2. Ela gesticula apontando para o produto com a mão livre.
+3. Ela inclina a cabeça levemente e dá um sorriso mais caloroso.
+
+Duração total: 8 a 12 segundos por variação.
+Formato: vertical 9:16. Resolução: 1080x1920.</pre>
+      <button class="copy-btn" onclick="copiarPrompt('capcut-pt', this)" style="margin-top:14px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Copiar prompt
+      </button>
+    </div>
+
+    <div class="modelo-box" id="capcut-en" style="background:rgba(255,255,255,.07); border-color:var(--azul-secundario); margin-top:20px;">
+      <div class="mod-titulo" style="color:var(--azul-secundario);">English version</div>
+      <pre style="color:#e2eaf5;">Generate an 8 to 12-second video featuring an AI-generated virtual influencer.
+
+CHARACTER:
+Black Brazilian woman, 25-35 years old. Natural, beautiful, and charismatic appearance.
+Natural or braided hair. Warm and confident facial expression.
+Clean outfit: light-colored or pastel basic blouse, neutral commercial look.
+This is a fully AI-generated character, not a real person.
+
+VISUAL STYLE:
+Soft studio lighting (diffuse frontal softbox). Clean background: white or light beige.
+Realistic image, commercial/professional quality. No heavy filters or stylization.
+Slow cinematic camera movement (smooth camera drift, no sharp cuts).
+
+FRAMING:
+Half-body shot. Face and upper body visible. Centered in vertical frame (9:16).
+
+ACTION:
+She holds the product with both hands, lifts it slightly and smiles at the camera.
+Then turns the product to face forward, as if presenting it to the viewer.
+Natural, friendly gesture, like a friend showing something she loves.
+
+CREATE 3 VARIATIONS:
+1. She looks directly at the camera and smiles, product in front.
+2. She gestures, pointing to the product with her free hand.
+3. She tilts her head slightly and gives a warmer, softer smile.
+
+Duration: 8 to 12 seconds per variation.
+Format: vertical 9:16. Resolution: 1080x1920.</pre>
+      <button class="copy-btn" onclick="copiarPrompt('capcut-en', this)" style="margin-top:14px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Copiar prompt
+      </button>
+    </div>
+
+    <div class="dica" style="margin-top:20px; background:rgba(255,255,255,.08); border-left-color:var(--amarelo);">
+      <div class="dica-titulo" style="color:var(--amarelo);">Dica de uso</div>
+      <p style="color:#d0e6f0;">Substitua a palavra "produto" pela descrição do seu produto real. Ex: "garrafa de azeite artesanal", "caixa de doces", "blusa estampada". Quanto mais específico, melhor o resultado.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- GLOSSARIO -->
+<section id="glossario">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">G</div>
+      <h2>Glossário — palavras que você vai ouvir</h2>
+    </div>
+    <div class="glossario-grid">
+      <div class="gloss-item"><h4>For You (Para Você / FYP)</h4><p>A tela principal do TikTok onde aparecem vídeos de pessoas que você não segue. É como uma vitrine onde o TikTok coloca seus vídeos na frente de novos clientes, de graça.</p></div>
+      <div class="gloss-item"><h4>Gancho</h4><p>A primeira frase ou imagem do vídeo. O gancho é o que faz a pessoa parar de rolar e assistir. Sem um bom gancho, nem o melhor produto vai ser visto.</p></div>
+      <div class="gloss-item"><h4>Retenção</h4><p>O tempo que as pessoas ficam assistindo seu vídeo. Quanto maior a retenção (mais pessoas assistindo até o fim), mais o TikTok espalha seu vídeo para outros.</p></div>
+      <div class="gloss-item"><h4>Engajamento</h4><p>Todas as ações que as pessoas fazem com seu vídeo: curtir, comentar, salvar e compartilhar. Comentários e salvamentos valem mais do que curtidas para o algoritmo.</p></div>
+      <div class="gloss-item"><h4>CTA (Chamada para Ação)</h4><p>A instrução que você dá ao espectador no final do vídeo. "Chama no WhatsApp", "Comenta aqui" ou "Clica no link da bio" são exemplos de CTA.</p></div>
+      <div class="gloss-item"><h4>Tendência (Trend)</h4><p>Um tipo de vídeo, música ou formato que está em alta no momento. Usar tendências pode aumentar o alcance do seu vídeo, mas não é obrigatório.</p></div>
+      <div class="gloss-item"><h4>Prova Social</h4><p>Qualquer evidência de que outras pessoas já compraram e aprovaram seu produto. Pode ser um depoimento, foto de cliente ou elogio no WhatsApp. Gera confiança imediata.</p></div>
+      <div class="gloss-item"><h4>Algoritmo</h4><p>O sistema inteligente do TikTok que decide quem vai ver seus vídeos. Ele aprende com o comportamento das pessoas: o que assistem, param, pulam ou compartilham.</p></div>
+      <div class="gloss-item"><h4>Audio em Alta (Trending Audio)</h4><p>Uma música ou fala que muitas pessoas estão usando ao mesmo tempo no TikTok. Usar esses áudios pode aumentar muito o alcance do seu vídeo porque o algoritmo favorece conteúdo com sons em tendência.</p></div>
+      <div class="gloss-item"><h4>LIVE</h4><p>Transmissão ao vivo pelo TikTok. Durante a LIVE, você aparece em tempo real para seus seguidores e para novos espectadores, podendo vender, tirar dúvidas e criar conexão direta com os clientes.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divisor" />
+
+<!-- FRASES -->
+<section id="frases" style="background:var(--cinza-neutro);">
+  <div class="container">
+    <div class="secao-header">
+      <div class="secao-numero">"</div>
+      <h2>Frases para lembrar quando bater o desânimo</h2>
+    </div>
+    <div class="frases-grid">
+      <div class="frase-card">"Você não precisa de câmera profissional. Precisa de clareza no que vende."</div>
+      <div class="frase-card">"Seu primeiro vídeo vai ser o pior. Publique assim mesmo."</div>
+      <div class="frase-card">"Um vídeo postado vale mais do que dez vídeos planejados."</div>
+      <div class="frase-card">"Consistência não é talento. É decisão."</div>
+      <div class="frase-card">"Quem não aparece, não vende. É simples assim."</div>
+      <div class="frase-card">"O algoritmo não favorece o perfeito. Ele favorece o constante."</div>
+      <div class="frase-card">"Seu cliente não quer perfeição. Quer confiar em você."</div>
+      <div class="frase-card">"Cada vídeo é um vendedor trabalhando enquanto você dorme."</div>
+      <div class="frase-card">"Não existe hora certa para começar. A hora certa é agora."</div>
+      <div class="frase-card">"Quem aparece todo dia na tela vira referência no bairro."</div>
+      <div class="frase-card">"Você não está só vendendo um produto. Está representando o seu bairro."</div>
+      <div class="frase-card">"A sua história é o seu diferencial. Nenhuma grande marca tem isso."</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>Guia produzido no âmbito do projeto <strong>Prospera Rio</strong></p>
+    <p>Proponente: <strong>Instituto BR</strong> · Patrocínio: <strong>Sebrae</strong></p>
+    <p style="margin-top:10px; font-size:.8rem; color:rgba(255,255,255,.4);">Maré · Jacarezinho · Rio de Janeiro</p>
+  </div>
+</footer>
+
+<script>
+  function copiarPrompt(id, btn) {
+    var box = document.getElementById(id);
+    var pres = box.querySelectorAll('pre');
+    var texto = '';
+    pres.forEach(function(pre) {
+      texto += pre.innerText.trim() + '\n\n';
+    });
+    texto = texto.trim();
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(texto).then(function() {
+        confirmarCopia(btn);
+      }).catch(function() {
+        fallbackCopy(texto, btn);
+      });
+    } else {
+      fallbackCopy(texto, btn);
+    }
+  }
+
+  function fallbackCopy(texto, btn) {
+    var ta = document.createElement('textarea');
+    ta.value = texto;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try { document.execCommand('copy'); confirmarCopia(btn); } catch(e) {}
+    document.body.removeChild(ta);
+  }
+
+  function confirmarCopia(btn) {
+    var original = btn.innerHTML;
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
+    btn.classList.add('copiado');
+    setTimeout(function() {
+      btn.innerHTML = original;
+      btn.classList.remove('copiado');
+    }, 2500);
+  }
+</script>
+
+</body>
+</html>
